@@ -1,0 +1,30 @@
+class Penguin:
+    def __init__(self, arm_length, leg_length, num_eyes, has_tail, is_furry):
+        # Initialize the penguin's physical characteristics
+        self.arm_length = arm_length
+        self.leg_length = leg_length
+        self.num_eyes = num_eyes
+        self.has_tail = has_tail
+        self.is_furry = is_furry
+
+    def describe(self):
+        # Print out the penguin's characteristics
+        print("🐧 Penguin Description 🐧")
+        print(f"Arm length: {self.arm_length} inches")
+        print(f"Leg length: {self.leg_length} inches")
+        print(f"Number of eyes: {self.num_eyes}")
+        print(f"Has a tail: {self.has_tail}")
+        print(f"Is furry: {self.is_furry}")
+
+
+def main():
+    # Fill in the values for the characteristics
+    my_penguin = Penguin(arm_length=6.0, leg_length=4.5, num_eyes=2, has_tail=True, is_furry=False)
+
+    # Call the describe method to print the details
+    my_penguin.describe()
+
+
+# Run the program
+if __name__ == "__main__":
+    main()
